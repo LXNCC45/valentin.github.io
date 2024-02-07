@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://quelles-dates.fr/wp-content/uploads/Saint-Valentin.jpg') center/cover no-repeat; /* Ajoutez le chemin de votre image de fond */
+}
+
+.container {
+    text-align: center;
+    color: #fff; /* Couleur du texte */
+}
+
+.question-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+button:hover {
+    filter: brightness(1.2); /* Légère augmentation de la luminosité au survol */
+}
+
+#yesButton {
+    background-color: #FF4081; /* Couleur rose joyeuse */
+    color: #fff;
+}
+
+#noButton {
+    background-color: #000000; /* Couleur verte joyeuse */
+    color: #fff;
+}
+
+#happyEffect {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: url('happy_effect.gif') center/cover no-repeat; /* Ajoutez le chemin de votre image d'effet joyeux */
+    animation: happyEffectAnimation 2s ease-out;
+    display: none;
+}
+
+@keyframes happyEffectAnimation {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
